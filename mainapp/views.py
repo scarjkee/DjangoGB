@@ -42,13 +42,5 @@ class DocSitePageView(TemplateView):
 
 class LoginPageView(TemplateView):
     template_name = "mainapp/login.html"
-def hello_world(request):
-    return HttpResponse("Hello world")
-
-
-def check_kwargs(request, **kwargs):
-    return HttpResponse(f"kwargs:<br>{kwargs}")
-
-
 
 # Create your views here.
